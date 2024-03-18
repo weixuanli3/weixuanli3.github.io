@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "MuktaVaani";
+    src: url("resources/MuktaVaani-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* height: 100%; */
+    margin: 0; 
+    padding: 0;
+    font-family: MuktaVaani;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#main_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f8e8;
+}
+
+.profile_card {
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+    .profile_card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.name {
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+.occu {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.profile_card_image {
+    background-image: url("resources/images/Weixuan_Li.png");
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: background-image 0.8s ease;
+}
+
+.profile_card_image:hover {
+    background-image: url("resources/images/avatar.png");
+}
+
+.profile_card_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile_card_text a img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.profile_card_text a img:hover {
+    filter: grayscale(0%);
+}
+
+.contact_button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: lightblue;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
