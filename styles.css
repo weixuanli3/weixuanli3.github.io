@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "MuktaVaani";
+    src: url("resources/MuktaVaani-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     height: 100%;
     margin: 0; 
@@ -5,12 +12,13 @@ body, html {
     justify-content: center; 
     align-items: center;
     background-color: #f7f8e8;
+    font-family: MuktaVaani;
 }
 
 .profile_card {
     display: flex;
     justify-content: space-around;
-    width: 575px;
+    width: 650px;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -22,8 +30,18 @@ body, html {
     }
 }
 
+.name {
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+.occu {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
 .profile_card_image {
-    background-image: url(images/Weixuan_Li.png);
+    background-image: url("resources/images/Weixuan_Li.png");
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -31,7 +49,7 @@ body, html {
 }
 
 .profile_card_image:hover {
-    background-image: url("images/passport.jpg");
+    background-image: url("resources/images/passport.jpg");
 }
 
 .profile_card_text {
