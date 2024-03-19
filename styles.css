@@ -121,6 +121,34 @@ body {
     filter: grayscale(0%);
 }
 
+.contact_button {
+    padding: 0;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    border-left: 10px solid var(--orange);
+    transition: 0.3s;
+}
+
+.contact_button:hover,
+.contact_button:focus {
+    box-shadow: inset 180px 0 0 0 var(--orange);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
 /* ================================================================
 ===================================================================
 ===================================================================
@@ -161,6 +189,18 @@ body {
     color: white;
 }
 
+.flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    transition: transform 0.5s;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+    transform: scale(1.2);
+}
+
 /* ================================================================
 ===================================================================
 ===================================================================
@@ -168,34 +208,6 @@ body {
 ===================================================================
 ===================================================================
 ================================================================ */
-
-.contact_button {
-    padding: 0;
-    width: 180px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.2rem;
-    border-left: 10px solid var(--orange);
-    transition: 0.3s;
-}
-
-.contact_button:hover,
-.contact_button:focus {
-    box-shadow: inset 180px 0 0 0 var(--orange);
-}
-
-.arrow {
-    position: absolute;
-    bottom: 10px;
-    cursor: pointer;
-    transition: transform 0.5s
-}
-
-.arrow:hover {
-    transform: scale(1.2);
-}
 
 #contact {
     position: relative;
