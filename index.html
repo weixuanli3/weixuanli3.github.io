@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="/resources/flickity/flickity.css" media="screen">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="resources/images/avatar.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weixuan Li</title>
     </head>
     <body>
-        <div id="main_page">
+        <section id="main_page">
             <!--large image for front page-->
             <div class="profile_card">
                 <div class="profile_card_image">
@@ -26,11 +27,18 @@
             <div class="arrow">
                 <a href="#about"><img src="resources/images/down_arrow.png" alt="arrow" width="40" height="40"></a>
             </div>
-        </div>
-        <div id="about">
-            testington
-        </div>
-        <div id="contact">
+        </section>
+
+        <section id="about">
+            <!--slideshow-->
+            <section class="slideshow js-flickity" data-flickity-options='{"wrapAround": true}'>
+                <div id="slide1-intro" class="slide"></div>
+                <div id="slide2-hobbies" class="slide"></div>
+                <div id="slide3-languages" class="slide"></div>
+            </section>
+        </section>
+
+        <section id="contact">
             <div class="contact_title">
                 <h1>Let's get in touch!</h1>
                 <p>Interested in finding out more? Shoot me a message on any of my socials and let's chat!</p>
@@ -60,7 +68,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
+        <script src="/resources/flickity/flickity.pkgd.js"></script>
     </body>
-    </html>
+</html>
 

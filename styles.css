@@ -24,6 +24,8 @@ body {
     overflow-x: hidden;
 }
 
+/* MAIN PAGE CSS CODE */
+
 #main_page {
     display: flex;
     flex-direction: column;
@@ -112,6 +114,42 @@ body {
 .profile_card_text a img:hover {
     filter: grayscale(0%);
 }
+
+/* ABOUT ME CSS CODE */
+
+#about {
+    height: 100dvh;
+    background-color: var(--orange);
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slideshow {
+    background: #EEE;
+    height: 100dvh;
+}
+
+.slide {
+    width: 100%;
+    height: 100dvh;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: slide;
+}
+
+  /* cell number */
+.slide:before {
+    display: block;
+    text-align: center;
+    content: counter(slide);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+/* CONTACT PAGE CSS CODE */
 
 .contact_button {
     padding: 0;
