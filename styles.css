@@ -149,6 +149,19 @@ body {
     transform: scale(1.2);
 }
 
+.about_hide {
+    position: absolute;
+    bottom: 40px;
+    width: 12ch;
+    left: -1.5ch;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.arrow_about:hover .about_hide {
+    opacity: 1;
+}
+
 /* ================================================================
 ===================================================================
 ===================================================================
