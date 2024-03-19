@@ -138,14 +138,14 @@ body {
     box-shadow: inset 180px 0 0 0 var(--orange);
 }
 
-.arrow {
+.arrow_about {
     position: absolute;
     bottom: 10px;
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-.arrow:hover {
+.arrow_about:hover {
     transform: scale(1.2);
 }
 
@@ -177,15 +177,12 @@ body {
     height: 100dvh;
     margin-right: 10px;
     background: #8C8;
-    /* counter-increment: slide; */
     align-items: center;
 }
 
-  /* cell number */
 .slide:before {
     display: block;
     text-align: center;
-    /* content: counter(slide); */
     line-height: 200px;
     font-size: 80px;
     color: white;
@@ -201,6 +198,28 @@ body {
 .flickity-prev-next-button:hover {
     background: transparent;
     transform: scale(1.2);
+}
+
+.flickity-page-dots {
+    bottom: 10px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+@media screen and (max-width: 500px) {
+    .flickity-prev-next-button {
+        display: none;
+    }
 }
 
 .slide_box {
