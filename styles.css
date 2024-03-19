@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+:root {
+    --dark-purple: #595895;
+    --light-purple: #8880BB;
+    --orange: #E7AC74;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +30,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #f7f8e8;
+    background-color: var(--light-purple);
 }
 
 .profile_card {
@@ -101,12 +107,20 @@ body {
 }
 
 .contact_button {
-    width: 120px;
-    height: 40px;
+    padding: 0;
+    width: 180px;
+    height: 50px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
-    background-color: lightblue;
+    font-size: 1.2rem;
+    border-left: 10px solid var(--orange);
+    transition: 0.3s;
+}
+
+.contact_button:hover,
+.contact_button:focus {
+    box-shadow: inset 180px 0 0 0 var(--orange);
 }
 
 .arrow {
