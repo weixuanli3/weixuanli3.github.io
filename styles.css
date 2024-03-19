@@ -16,7 +16,6 @@ html {
 }
 
 body {
-    /* height: 100%; */
     margin: 0; 
     padding: 0;
     font-family: MuktaVaani;
@@ -139,7 +138,6 @@ body {
 }
 
 .arrow_about {
-    position: absolute;
     bottom: 10px;
     cursor: pointer;
     transition: transform 0.5s;
@@ -191,6 +189,7 @@ body {
     margin-right: 10px;
     background: #8C8;
     align-items: center;
+    flex-direction: column;
 }
 
 .slide:before {
@@ -214,7 +213,8 @@ body {
 }
 
 .flickity-page-dots {
-    bottom: 10px;
+    position: absolute;
+    bottom: 18dvh;
 }
 /* white circles */
 .flickity-page-dots .dot {
@@ -222,11 +222,11 @@ body {
     height: 12px;
     opacity: 1;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--dark-purple);
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
-    background: white;
+    background: var(--dark-purple);
 }
 
 @media screen and (max-width: 500px) {
@@ -236,6 +236,7 @@ body {
 }
 
 .slide_box {
+    position: relative;
     width: 80dvw;
     height: 80dvh;
     background-color: #fff;
@@ -249,11 +250,34 @@ body {
     color: var(--dark-purple);
     font-size: 3rem;
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 30px;
     width: 80%;
     margin: auto;
     line-height: 3.5rem;
     padding-bottom: 30px;
+}
+
+.arrow_contact {
+    bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.arrow_contact:hover {
+    transform: scale(1.2);
+}
+
+.contact_hide {
+    position: absolute;
+    bottom: 40px;
+    width: 12ch;
+    left: -2.1ch;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.arrow_contact:hover .contact_hide {
+    opacity: 1;
 }
 
 /* ================================================================
