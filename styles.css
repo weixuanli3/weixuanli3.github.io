@@ -24,6 +24,14 @@ body {
     overflow-x: hidden;
 }
 
+/* ================================================================
+===================================================================
+===================================================================
+                        MAIN PAGE CSS CODE 
+===================================================================
+===================================================================
+================================================================ */
+
 #main_page {
     display: flex;
     flex-direction: column;
@@ -130,14 +138,14 @@ body {
     box-shadow: inset 180px 0 0 0 var(--orange);
 }
 
-.arrow {
+.arrow_about {
     position: absolute;
     bottom: 10px;
     cursor: pointer;
-    transition: transform 0.5s
+    transition: transform 0.5s;
 }
 
-.arrow:hover {
+.arrow_about:hover {
     transform: scale(1.2);
 }
 
@@ -150,8 +158,111 @@ body {
     transition: opacity 0.2s ease-in;
 }
 
-.arrow:hover .about_hide {
+.arrow_about:hover .about_hide {
     opacity: 1;
+}
+
+/* ================================================================
+===================================================================
+===================================================================
+                        ABOUT ME CSS CODE 
+===================================================================
+===================================================================
+================================================================ */
+
+#about {
+    height: 100dvh;
+    background-color: var(--orange);
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slideshow {
+    background: #EEE;
+    height: 100dvh;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 100dvh;
+    margin-right: 10px;
+    background: #8C8;
+    align-items: center;
+}
+
+.slide:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    transition: transform 0.5s;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+    transform: scale(1.2);
+}
+
+.flickity-page-dots {
+    bottom: 10px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+@media screen and (max-width: 500px) {
+    .flickity-prev-next-button {
+        display: none;
+    }
+}
+
+.slide_box {
+    width: 80dvw;
+    height: 80dvh;
+    background-color: #fff;
+    opacity: 0.8;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#about h1 {
+    text-align: center;
+    color: var(--dark-purple);
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    line-height: 3.5rem;
+    padding-bottom: 30px;
+}
+
+/* ================================================================
+===================================================================
+===================================================================
+                        CONTACT CSS CODE 
+===================================================================
+===================================================================
+================================================================ */
 
 #contact {
     position: relative;
@@ -172,6 +283,7 @@ body {
     margin: auto;
     line-height: 3.5rem;
     padding-bottom: 30px;
+    padding-top:100px;
 }
 
 #contact p {
@@ -189,7 +301,7 @@ body {
     flex-wrap: wrap;
     position: relative;
     left: 50%;
-    transform: translate(-50%, 90%);
+    transform: translate(-50%, 40%);
     width: 100%;
     justify-content: center;
     gap: 15px;
