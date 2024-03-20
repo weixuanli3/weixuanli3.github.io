@@ -263,27 +263,14 @@ body {
     box-shadow: inset 180px 0 0 0 var(--orange);
 }
 
-.arrow_about {
+.arrow_next {
     bottom: 10px;
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-.arrow_about:hover {
+.arrow_next:hover {
     transform: scale(1.2);
-}
-
-.about_hide {
-    position: absolute;
-    bottom: 40px;
-    width: 12ch;
-    left: -1.5ch;
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
-
-.arrow_about:hover .about_hide {
-    opacity: 1;
 }
 
 /* ================================================================
@@ -341,7 +328,7 @@ body {
 
 .flickity-page-dots {
     position: absolute;
-    bottom: 18dvh;
+    bottom: 8dvh;
 }
 /* white circles */
 .flickity-page-dots .dot {
@@ -370,41 +357,50 @@ body {
     opacity: 0.8;
     margin: auto;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #about h1 {
     text-align: center;
     color: var(--dark-purple);
     font-size: 3rem;
-    margin-top: 0;
-    padding-top: 30px;
-    width: 80%;
-    margin: auto;
+    margin: 0;
+    width: 100%;
     line-height: 3.5rem;
-    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-.arrow_contact {
-    bottom: 10px;
-    cursor: pointer;
-    transition: transform 0.5s;
+#about .avatar_hi {
+    height: auto;
+    width: 40%;
+    max-width: 300px;
 }
 
-.arrow_contact:hover {
-    transform: scale(1.2);
+#about .intro {
+    width: 50%;
+    color: var(--dark-purple);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-right: 50px;
 }
 
-.contact_hide {
-    position: absolute;
-    bottom: 40px;
-    width: 12ch;
-    left: -2.1ch;
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
+@media screen and (max-width: 800px) {
+    #about .slide_box {
+        align-items: center;
+        justify-content: center;
+    }
 
-.arrow_contact:hover .contact_hide {
-    opacity: 1;
+    #about .intro {
+        width: 80%;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 /* ================================================================
