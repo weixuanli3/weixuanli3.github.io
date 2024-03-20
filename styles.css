@@ -375,13 +375,14 @@ body {
     padding-top: 30px;
 }
 
-#about .avatar_hi {
+#about .slide_img {
     height: auto;
     width: 40%;
     max-width: 300px;
+    padding-bottom: 15px;
 }
 
-#about .intro {
+#about .slide_text {
     width: 50%;
     color: var(--dark-purple);
     font-size: 1rem;
@@ -394,16 +395,13 @@ body {
     padding-bottom: 15px;
 }
 
-#about .languages {
-    
-}
 @media screen and (max-width: 800px) {
     #about .slide_box {
         align-items: center;
         justify-content: center;
     }
 
-    #about .intro {
+    #about .slide_img {
         width: 80%;
         padding: 0;
         text-align: center;
