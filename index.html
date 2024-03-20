@@ -82,34 +82,40 @@
         </section>
 
         <section id="contact">
-            <div class="contact_title">
-                <h1>Let's get in touch!</h1>
-                <p>Interested in finding out more? Shoot me a message on any of my socials and let's chat!</p>
+            <h1>Let's get in touch!</h1>
+            <div class="contact_left">
+                <div class="contact_title">
+                    <p>Interested in finding out more? Shoot me a message on any of my socials, or leave me a message here, and let's chat!</p>
+                </div>
+                <div class="contact_links">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/weixuan.li.182/" target="_blank">
+                                <img src="resources/images/contact/facebook.png" alt="facebook" width="40" height="40" class="fb icon">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/weixuanli3/" target="_blank">
+                                <img src="resources/images/contact/linkedin.png" alt="linkedin" width="40" height="40" class="linkedin icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/weixuanli3" target="_blank">
+                                <img src="resources/images/contact/github.png" alt="github" width="40" height="40" class="github icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact_links">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/weixuan.li.182/" target="_blank">
-                            <img src="resources/images/contact/facebook.png" alt="facebook" width="40" height="40" class="fb icon">
-                            </i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/weixuanli3/" target="_blank">
-                            <img src="resources/images/contact/linkedin.png" alt="linkedin" width="40" height="40" class="linkedin icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/weixuanli3" target="_blank">
-                            <img src="resources/images/contact/github.png" alt="github" width="40" height="40" class="github icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:weixuanli3@gmail.com" target="_blank">
-                            <img src="resources/images/contact/gmail.png" alt="mail" width="40" height="30" class="mail icon">
-                        </a>
-                    </li>
-                </ul>
+            <div class="contact_right">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+                    <input type="hidden" name="access_key" value="2b5b8a3f-001f-47b7-b2a8-e62516f92bdb">
+                    <input type="text" name="name" class="contact_input" placeholder="Your Name" required>
+                    <input type="email" name="email" class="contact_input" placeholder="Your Email" required>
+                    <textarea class="contact_input" name="message" placeholder="Your Message" required></textarea>
+                    <button class="contact_form_button" type="submit">Submit <img src="resources/images/right-arrow.png" alt=""></button>
+                </form>
             </div>
         </section>
         <script src="/resources/flickity/flickity.pkgd.js"></script>
