@@ -404,11 +404,15 @@ body {
     #about .slide_img {
         width: 80%;
         padding: 0;
-        text-align: center;
     }
-
+    
     #about .spotify {
         width: 80%;
+    }
+    
+    #about .slide_text {
+        text-align: center;
+        padding: 0;
     }
 }
 
@@ -450,7 +454,8 @@ body {
 
 .tiles .tile {
     width: 30%;
-    height: 250px;
+    min-width: 300px;
+    height: auto;
     display: inline-block;
     margin: 10px;
     text-align: center; /* Center the content horizontally */
