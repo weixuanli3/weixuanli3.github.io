@@ -300,7 +300,6 @@ body {
     width: 100%;
     height: 100dvh;
     margin-right: 10px;
-    /* background: #8C8; */
     background: linear-gradient(#8C8, rgb(186, 217, 186));
     align-items: center;
     flex-direction: column;
@@ -353,14 +352,14 @@ body {
     position: relative;
     width: 80dvw;
     height: 80dvh;
-    background-color: #fff;
-    opacity: 0.8;
+    background-color: rgb(243, 238, 232);
+    opacity: 1;
     margin: auto;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: center;
     justify-content: space-evenly;
     overflow-y: auto;
     overflow-x: hidden;
@@ -390,6 +389,14 @@ body {
     padding-right: 50px;
 }
 
+#about .spotify {
+    border-radius: 12px;
+    padding-bottom: 15px;
+}
+
+#about .languages {
+    
+}
 @media screen and (max-width: 800px) {
     #about .slide_box {
         align-items: center;
@@ -400,6 +407,10 @@ body {
         width: 80%;
         padding: 0;
         text-align: center;
+    }
+
+    #about .spotify {
+        width: 80%;
     }
 }
 
