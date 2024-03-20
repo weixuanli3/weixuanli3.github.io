@@ -26,6 +26,130 @@ body {
 /* ================================================================
 ===================================================================
 ===================================================================
+                        NAV BUTTON CSS CODE 
+===================================================================
+===================================================================
+================================================================ */
+.nav_button {
+    box-sizing: border-box;
+}
+
+.nav_contain {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    left: 10px;
+    /* top: 10px; */
+    display: block;
+    margin: auto;
+}
+
+.nav_button .nav_links {
+    display: flex;
+}
+
+.nav_button .nav_contain li {
+    list-style: none;
+}
+
+.nav_button .nav_contain a {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 var(--orange);
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0 -0.25rem;
+    padding: 0 0.8rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav_button .nav_contain a:hover {
+    box-shadow: inset 100px 0 0 0 var(--orange);
+    color: white;
+}
+
+.nav_button .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 5px;
+    left: -2px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav_contain .hamburger {
+    position: absolute;
+    height: 26px;
+    width: 32px;
+    top: 10px;
+    left: 2px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav_contain .hamburger .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: black;
+}
+
+.nav_contain .hamburger .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav_contain .hamburger .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav_contain .hamburger .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav_button .nav_links {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    width: 200px;
+    transform: translate(-150%);
+    margin-left: -10px;
+    padding-top: 120px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav_button .nav_links li {
+    padding-bottom: 20px;
+}
+
+.nav_contain input[type="checkbox"]:checked ~ .hamburger .line1 {
+    transform: rotate(45deg);
+}
+
+.nav_contain input[type="checkbox"]:checked ~ .hamburger .line2 {
+    transform: scaleY(0);
+}
+
+.nav_contain input[type="checkbox"]:checked ~ .hamburger .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav_contain input[type="checkbox"]:checked ~ .nav_links {
+    transform: translateX(0);
+}
+/* ================================================================
+===================================================================
+===================================================================
                         MAIN PAGE CSS CODE 
 ===================================================================
 ===================================================================
