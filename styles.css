@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+* {
+    color-scheme: only light;
+}
+
 :root {
     --dark-purple: #595895;
     --light-purple: #8880BB;
