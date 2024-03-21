@@ -439,6 +439,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 #projects h1 {
@@ -543,6 +544,12 @@ body {
 
 .tiles .tile .info {
     transition-delay: 0.25s;
+}
+
+.proj_arrow {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
 }
 
 /* ================================================================
