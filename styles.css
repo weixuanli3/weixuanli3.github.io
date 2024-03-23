@@ -644,7 +644,8 @@ body {
 
 #contact ul li a:hover .icon {
     color: #fff;
-    transform: rotateY(360deg);
+    transform: rotateY(360deg) scale(1.2);
+    transition: 0.5s;
 }
 
 #contact ul li a::before {
@@ -659,10 +660,13 @@ body {
 }
 
 #contact ul li a:hover::before {
-    top: 0;}
+    top: 0;
+}
 
 #contact ul li a:hover {
     box-shadow: 0 0 40px #fff;
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 #contact ul li:nth-child(1) a::before{
